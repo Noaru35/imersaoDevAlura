@@ -1,8 +1,7 @@
 function jogar() {
-    let rodada = 1;
     let quebrado = false;
   
-    while (rodada <= 3  && quebrado == false) {
+    for (let rodada = 1; rodada <= 3; rodada++) {
       console.log("Rodada: " + rodada);
   
       let escolhaJogador = prompt("Nivel " + rodada + ", escolha o vidro (1, 2 ou 3)?");
@@ -20,12 +19,11 @@ function jogar() {
         alert("O vidro não quebrou! piso quebrado era o: " + pisoQuebrado);
       }
   
-      rodada = rodada + 1;
-  
-      if (rodada == 4) {
+    }
+    if (quebrado == false) {
         alert("Você venceu! Vamos jogar novamente");
         rodada = 0;
       }
-    }
+
   }
   
