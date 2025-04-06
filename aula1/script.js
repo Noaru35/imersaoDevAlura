@@ -1,9 +1,9 @@
 function conversor(){
 
-    let valor = prompt('Digite um valor em wons');
+    let valor = prompt('Digite um valor em dolares');
     alert(valor);
     
-    let umWom = 0.0040;
+    let umWom = 5.683;
     
     let convertido = valor * umWom;
     alert('R$' + convertido);
